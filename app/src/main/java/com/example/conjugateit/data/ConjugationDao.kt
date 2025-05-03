@@ -35,7 +35,6 @@ interface ConjugationDao {
     @Query("SELECT future FROM conjugations WHERE type = :type")
     fun getFuture(type: String): String?
 
-    // Add similar methods for all other columns...
     @Query("SELECT imperfect FROM conjugations WHERE type = :type")
     fun getImperfect(type: String): String?
 
